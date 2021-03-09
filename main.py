@@ -54,7 +54,7 @@ freq = 440  # Hz
 # options.add_argument(f'user-agent=' + user_agent)
 # options.add_experimental_option("excludeSwitches", ["enable-automation"])
 # options.add_experimental_option('useAutomationExtension', False)
-https://github.com/mozilla/geckodriver/releases
+
 # driver = webdriver.Chrome(chrome_options=options)
 
 
