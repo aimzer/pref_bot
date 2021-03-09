@@ -1,11 +1,15 @@
 #!/usr/bin/python
 import os
-import schedule
+# import schedule
 import time
-import unittest
-import smtplib
-import nexmo
+# import unittest
+# import smtplib
+# import nexmo
+
+#### pip install beautifulsoup4
 from bs4 import BeautifulSoup
+
+#### pip install selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
@@ -22,7 +26,7 @@ import os
 
 minutes = 2
 
-sms_msg = "YOUR MESSAGE TO BE SENT IN SMS"
+# sms_msg = "YOUR MESSAGE TO BE SENT IN SMS"
 
 search_text1 = "Il n'existe plus de plage horaire libre pour votre demande de rendez-vous."
 error_text1 = "No server is available to handle this request"
@@ -50,7 +54,7 @@ freq = 440  # Hz
 # options.add_argument(f'user-agent=' + user_agent)
 # options.add_experimental_option("excludeSwitches", ["enable-automation"])
 # options.add_experimental_option('useAutomationExtension', False)
-
+https://github.com/mozilla/geckodriver/releases
 # driver = webdriver.Chrome(chrome_options=options)
 
 
@@ -126,8 +130,8 @@ def send_availability():
     if len(html_source.get_text()) < 200:
         return 0
 
-    if search_text1 in html_source.get_text():
-        return 1
+#     if search_text1 in html_source.get_text():
+#         return 1
     
     # notification
     print('available')
